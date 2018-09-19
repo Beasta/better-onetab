@@ -1,7 +1,7 @@
 import _ from 'lodash'
 import browser from 'webextension-polyfill'
 
-const apiUrl = 'https://boss.cnwangjie.com'
+const apiUrl = 'https://www.google.com'
 const tokenKey = 'boss_token'
 const tokenHeader = 'auth'
 
