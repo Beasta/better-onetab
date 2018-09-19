@@ -12,12 +12,6 @@ if (DEBUG && !MOZ) import(
   './common/autoreload'
 ).then(({autoreload}) => autoreload())
 
-/* eslint-disable-next-line */
-if (PRODUCTION) import(
-  /* webpackChunkName: "tracker", webpackMode: "lazy" */
-  '@/common/tracker'
-).then(({tracker}) => tracker())
-
 if (DEBUG) {
   window.tabs = tabs
   window.browser = browser
@@ -131,7 +125,6 @@ const commandHandler = async command => {
     return storage.setLists(lists)
   } else if (command === 'open-lists') tabs.openTabLists()
   else return true
-  if (PRODUCTION) ga('send', 'event', 'Command', 'used', command)
 }
 
 const init = async () => {
@@ -150,7 +143,6 @@ const init = async () => {
       if (changes.browserAction) updateBrowserAction(changes.browserAction)
       if (('pageContext' in changes) || ('allContext' in changes)) await setupContextMenus(changes)
       await browser.runtime.sendMessage({optionsChangeHandledStatus: 'success'})
-      if (PRODUCTION) Object.keys(changes).map(key => ga('send', 'event', 'Options', key + ':' + changes[key]))
     }
     if (msg.restoreList) {
       const {restoreList} = msg
