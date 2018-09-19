@@ -3,8 +3,6 @@
   "version": "1.0.0",
   "description": "a better onetab for chrome",
   "main": "index.js",
-  "repository": "https://github.com/cnwangjie/better-onetab",
-  "author": "cnwangjie",
   "license": "MIT",
   "scripts": {
     "dev": "NODE_ENV=development webpack --watch",
@@ -27,7 +25,6 @@
     "webextension-polyfill": "^0.3.1"
   },
   "devDependencies": {
-    "@cnwangjie/eslint-config": "^1.1.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
     "babel-loader": "^7.1.4",

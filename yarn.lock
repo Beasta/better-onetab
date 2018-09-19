@@ -106,14 +106,6 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@cnwangjie/eslint-config@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@cnwangjie/eslint-config/-/eslint-config-1.1.0.tgz#7f9f06ffe06a3c9be705eb313295b370ba2645e5"
-  dependencies:
-    argparse "^1.0.10"
-    esprima "^4.0.1"
-    sprintf-js "^1.0.3"
-
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"

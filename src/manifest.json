@@ -53,7 +53,6 @@
     "identity",
     "notifications"
   ],
-  "homepage_url": "https://github.com/cnwangjie/better-onetab",
   "oauth2": {
     "client_id": "__CLIENT_ID__",
     "scopes": [
